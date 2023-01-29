@@ -9,7 +9,7 @@ const Characters = (props) => {
             color = "orange"
         }
         else if(props.house === "Slytherin"){
-            color = "green"
+            color = "#0be38d"
         }
         else if(props.house === "Hufflepuff"){
             color = "violet"
@@ -20,7 +20,7 @@ const Characters = (props) => {
         
         
    return (
-        <div className="card my-4" style={{ backgroundColor: `black`, width: "250px" ,border:"2px solid violet"}}>
+        <div className="card " style={{ backgroundColor: `black`, width: "250px" ,border:"2px solid #0be38d", marginTop:"100px"}}>
             <img src={props.image ? props.image : "https://images.moviesanywhere.com/d489bfce9aef55a5271d8a7d7d42bdb6/d265259e-3386-4a1e-b95f-cc52f30ee6fb.jpg" }
             style={{height:"285px"}}
              className="card-img-top" alt="..." />

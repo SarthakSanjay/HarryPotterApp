@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import Characters from './Characters'
-const CharactersInformations = (props) => {
+import Spells from './Spells'
+const GetSpells = (props) => {
 
     const [name, setName] = useState([])
 
-    const getChar = async () => {
-        const url = `https://hp-api.onrender.com/api/characters/${props.category}`
+    const getSpells = async () => {
+        const url = `https://hp-api.onrender.com/api/${props.category}`
         let data = await fetch(url)
         let parsedData = await data.json()
 
         setName(parsedData)
     }
     useEffect(() => {
-        getChar()
+        getSpells()
     }, [])
 
     
@@ -21,8 +21,8 @@ const CharactersInformations = (props) => {
         <div className='container' >
             <div className='row '>
                 {name.map((element) => {
-                    return <div className='col-lg-4 d-flex justify-content-evenly'key={element.id}>
-                        <Characters title={element.name} image={element.image} house={element.house} actor={element.actor} />
+                    return <div className='col-lg-4 d-flex justify-content-evenly' key={element.id}>
+                        <Spells title={element.name} desc={element.description} />
                        
 
                         </div>
@@ -32,4 +32,4 @@ const CharactersInformations = (props) => {
     )
 }
 
-export default CharactersInformations
+export default GetSpells
