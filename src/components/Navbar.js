@@ -5,8 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg fixed-top  " style={{padding:"0px" }}>
             <div className="container-fluid " style={{
-                background: "rgb(2,0,36)",
-                background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,227,141,1) 51%, rgba(21,0,106,1) 100%)"
+                background: "#0be38d" ,
             }} >
                 <Link className="navbar-brand" to="/"><img src="https://i.pinimg.com/originals/5d/11/63/5d116306afbaf0e293af630b6937bc64.png" style={{ width: "50px" }} alt='img'/></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

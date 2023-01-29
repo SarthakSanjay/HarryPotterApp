@@ -32,7 +32,7 @@ const Characters = (props) => {
             }}>
 
             </div>
-            <span className="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark">Actor: {props.actor}</span>
+            <span className="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark" style={{border:"2px solid #0be38d"}}>Actor: {props.actor}</span>
 
             <div className="card-body">
                 <h4 className="card-title" style={{ color: "white" }}>{props.title}</h4>

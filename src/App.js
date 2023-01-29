@@ -27,6 +27,8 @@ function App() {
       <Route exact path='/spells' element={<GetSpells key='8' category='spells' />} />
       </Routes>
       </Router>
+      <h4 style={{color:"white",
+      margin:"0px"}}>Made with ✨magic✨ by Sarthak Sanjay</h4>
     </div>
   );
 }
