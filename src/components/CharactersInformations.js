@@ -3,7 +3,6 @@ import Characters from './Characters'
 const CharactersInformations = (props) => {
 
     const [name, setName] = useState([])
-
     const getChar = async () => {
         const url = `https://hp-api.onrender.com/api/characters/${props.category}`
         let data = await fetch(url)
@@ -15,13 +14,13 @@ const CharactersInformations = (props) => {
         getChar()
     }, [])
 
-    
+    // console.log(count)
 
     return (
         <div className='container' >
             <div className='row '>
                 {name.map((element) => {
-                    return <div className='col-lg-4 d-flex justify-content-evenly'key={element.id}>
+                    return <div className='col-lg-3 d-flex justify-content-evenly'key={element.id}>
                         <Characters title={element.name} image={element.image} house={element.house} actor={element.actor} />
                        
 
