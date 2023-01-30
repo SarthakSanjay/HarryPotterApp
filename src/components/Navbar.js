@@ -23,9 +23,6 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/staff">Staff</Link>
                         </li>
-                        {/* <li className="nav-item">
-                            <Link className="nav-link" to="/house">House</Link>
-                        </li> */}
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" to="/house" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 House

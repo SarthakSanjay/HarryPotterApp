@@ -23,9 +23,7 @@ const GetSpells = (props) => {
                 {name.map((element) => {
                     return <div className='col-lg-4 d-flex justify-content-evenly' key={element.id}>
                         <Spells title={element.name} desc={element.description} />
-                       
-
-                        </div>
+                       </div>
                 })}
             </div>
         </div>

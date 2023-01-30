@@ -14,15 +14,14 @@ const CharactersInformations = (props) => {
         getChar()
     }, [])
 
-    // console.log(count)
 
     return (
         <div className='container' >
             <div className='row '>
                 {name.map((element) => {
-                    return <div className='col-lg-3 d-flex justify-content-evenly'key={element.id}>
+                    return <div className='col-lg-3 d-flex justify-content-evenly' key={element.id}>
                         <Characters title={element.name} image={element.image} house={element.house} actor={element.actor} />
-                       
+
 
                         </div>
                 })}
